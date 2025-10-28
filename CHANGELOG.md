@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.5.0] (2025-10-28)
+
+### Project Updates
+
+- Grafana Labs fork.
+
 ## 4.4.0 (2025-07-12)
 
 We are announcing the retirement of the Business News data source, effective immediately, as part of our ongoing effort to streamline and modernize our Grafana plugin ecosystem. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
