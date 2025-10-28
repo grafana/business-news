@@ -1,12 +1,14 @@
 # Business News for Grafana
 
-![Dashboard](https://raw.githubusercontent.com/VolkovLabs/business-news/main/src/img/dashboard.png)
+[![CI](https://github.com/grafana/business-news/actions/workflows/push.yml/badge.svg)](https://github.com/grafana/business-news/actions/workflows/push.yml)
+[![CD](https://github.com/grafana/business-news/actions/workflows/publish.yml/badge.svg)](https://github.com/grafana/business-news/actions/workflows/publish.yml)
+[![License](https://img.shields.io/github/license/grafana/business-news)](https://github.com/grafana/business-news/blob/main/LICENSE)
 
-![Grafana](https://img.shields.io/badge/Grafana-11.4-orange)
-![CI](https://github.com/volkovlabs/business-news/workflows/CI/badge.svg)
-![E2E](https://github.com/volkovlabs/business-news/workflows/E2E/badge.svg)
-[![codecov](https://codecov.io/gh/VolkovLabs/business-news/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/business-news)
-[![CodeQL](https://github.com/VolkovLabs/business-news/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/business-news/actions/workflows/codeql-analysis.yml)
+>This project was originally contributed by [Volkov Labs](https://github.com/volkovlabs/business-news) - thanks for all your great work!
+>
+>We have republished under the same plugin ID, keeping the community signature. This means you can simply update your plugin version. A new ID would have required manual updates to your dashboards. For additional information on the changes, see the [Notices](https://github.com/grafana/business-news/blob/main/NOTICES.md).
+
+The Business News data source is a plugin for Grafana that retrieves RSS and Atom feeds and allows visualizing them using Business Text and other panels.
 
 ## Announcement
 
@@ -15,12 +17,6 @@ We are announcing the retirement of the Business News data source, effective imm
 ### Why This Change?
 
 The retirement aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
-
-## Introduction
-
-The Business News data source is a plugin for Grafana that retrieves RSS and Atom feeds and allows visualizing them using Business Text and other panels.
-
-[![Business News data source for Grafana | News feed tutorial for Grafana Dashboard](https://raw.githubusercontent.com/volkovlabs/business-news/main/img/video.png)](https://youtu.be/RAxqS2hpWkg)
 
 ## Requirements
 
@@ -59,26 +55,10 @@ grafana-cli plugins install volkovlabs-rss-datasource
 | [Provisioning](https://volkovlabs.io/plugins/business-news/provisioning/) | Demonstrates how to automatically provision the data source. |
 | [Release Notes](https://volkovlabs.io/plugins/business-news/release/)     | Stay up to date with the latest features and updates.        |
 
-## Business Suite for Grafana
-
-The Business Suite is a collection of open source plugins created and actively maintained by Volkov Labs.
-
-The collection aims to solve the most frequent business tasks by providing an intuitive interface with detailed written documentation, examples, and video tutorials.
-
-[![Business Suite for Grafana](https://raw.githubusercontent.com/VolkovLabs/.github/main/business.png)](https://volkovlabs.io/plugins/)
-
-### Enterprise Support
-
-With the [Business Suite Enterprise](https://volkovlabs.io/pricing/), you're not just getting a product, you're getting a complete support system. You'll have a designated support team ready to tackle any issues.
-
-You can contact us via Zendesk, receive priority in feature requests and bug fixes, meet with us for in-person consultation, and get access to the Business Intelligence. It's a package that's designed to make your life easier.
-
 ## Always happy to hear from you
 
-- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/business-news/issues).
-- Subscribe to our [YouTube Channel](https://youtube.com/@volkovlabs) and leave your comments.
-- Become a [Business Suite sponsor](https://github.com/sponsors/VolkovLabs).
+- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/grafana/business-news/issues).
 
 ## License
 
-Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/business-news/blob/main/LICENSE).
+Apache License Version 2.0, see [LICENSE](https://github.com/grafana/business-news/blob/main/LICENSE).
