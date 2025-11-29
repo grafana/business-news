@@ -1,6 +1,6 @@
 ---
 title: Provisioning
-description: Learn about Provisioning in Grafana
+description: Learn how to provision the Business News data source using YAML configuration files.
 keywords:
   - business news
   - provisioning

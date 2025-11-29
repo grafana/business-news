@@ -1,6 +1,6 @@
 ---
 title: Business News
-description: Learn about Business News in Grafana
+description: Learn about the Business News data source plugin for Grafana that retrieves and visualizes RSS and Atom feeds.
 keywords:
   - business news
 labels:

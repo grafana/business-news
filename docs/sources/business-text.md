@@ -1,6 +1,6 @@
 ---
 title: Business Text
-description: Learn about Business Text in Grafana
+description: Learn how to use the Business Text visualization panel to display RSS feed content with HTML and Handlebars templates.
 keywords:
   - business news
   - business text
