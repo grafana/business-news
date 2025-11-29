@@ -53,11 +53,11 @@ grafana-cli plugins install volkovlabs-rss-datasource
 
 ## Documentation
 
-| Section                                                                   | Description                                                  |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [Business Text](https://volkovlabs.io/plugins/business-news/text/)        | Demonstrates how to display feed using Dynamic Text panel.   |
-| [Provisioning](https://volkovlabs.io/plugins/business-news/provisioning/) | Demonstrates how to automatically provision the data source. |
-| [Release Notes](https://volkovlabs.io/plugins/business-news/release/)     | Stay up to date with the latest features and updates.        |
+| Section     | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| [Business Text](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/business-text/) | Demonstrates how to display feed using Dynamic Text panel.   |
+| [Provisioning](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/provisioning/) | Demonstrates how to automatically provision the data source. |
+| [Release notes](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/release/) | Stay up to date with the latest features and updates.        |
 
 ## Business Suite for Grafana
 
@@ -73,12 +73,6 @@ With the [Business Suite Enterprise](https://volkovlabs.io/pricing/), you're not
 
 You can contact us via Zendesk, receive priority in feature requests and bug fixes, meet with us for in-person consultation, and get access to the Business Intelligence. It's a package that's designed to make your life easier.
 
-## Always happy to hear from you
-
-- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/business-news/issues).
-- Subscribe to our [YouTube Channel](https://youtube.com/@volkovlabs) and leave your comments.
-- Become a [Business Suite sponsor](https://github.com/sponsors/VolkovLabs).
-
 ## License
 
-Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/business-news/blob/main/LICENSE).
+Apache License Version 2.0, see [LICENSE](https://github.com/grafana/business-news/blob/main/LICENSE).
