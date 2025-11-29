@@ -1,0 +1,63 @@
+---
+title: Business Text
+description: Learn about Business Text in Grafana
+keywords:
+  - business news
+  - business text
+labels:
+  products:
+    - cloud
+    - enterprise
+    - oss
+weight: 20
+---
+
+# Business Text
+
+The [Business Text visualization panel](/plugins/business-text) is a perfect companion to Business News Data Source.
+
+{{< figure src="/media/docs/grafana/panels-visualizations/business-news/dynamic-text.png" class="border" alt="The Business Text panel visualizes the RSS feed from a YouTube channel." >}}
+
+## Disable Sanitize HTML
+
+To display HTML returned from feeds, disable the Sanitize HTML parameter.
+
+### Docker
+
+```sh
+GF_PANELS_DISABLE_SANITIZE_HTML=true
+```
+
+## Example
+
+To display the YouTube feed with the latest videos we used HTML and Handlebars template for data fields.
+
+| Handlebar value                       | Description                          |
+| ------------------------------------- | ------------------------------------ |
+| `{{author}}`                          | Author.                              |
+| `{{date updated 'MMM, DD YYYY'}}`     | Updated date in the specific format. |
+| `{{link}}`                            | URL.                                 |
+| `{{media:group:media:thumbnail:url}}` | Thumbnail URL.                       |
+| `{{title}}`                           | Title.                               |
+
+Template (Content) was displayed for each row as defined in the options.
+
+```html
+<table width="100%" style="border: 0">
+  <tr>
+    <td width="*" style="border: 0">
+      <h3>
+        <a target="_blank" style="color: blue" href="{{link}}">{{title}}</a>
+      </h3>
+    </td>
+    <td rowspan="2" style="border: 0" width="30%">
+      <div><img src="{{media:group:media:thumbnail:url}}" /></div>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 0">
+      <b>{{date updated 'MMM, DD YYYY'}} by {{author}}</b>
+    </td>
+  </tr>
+</table>
+```
