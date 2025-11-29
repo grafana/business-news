@@ -58,7 +58,7 @@ grafana cli plugins install volkovlabs-rss-datasource
 - Filters items/entries based on the selected time range.
 - Lets you specify query parameters with dashboard variables.
 
-The following example shows a dashboard that combines five Business News data sources, each paired with the [Business Text panel](/plugins/business-text/). The [Business Variable panel](/plugins/business-variable/) (#1) provides a switch between Volkov Labs, Grafana, and News channel.
+The following example shows a dashboard that combines five Business News data sources, each paired with the Business Text panels<!--add link to docs here -->. The [Business Variable panel](https://grafana.com/docs/plugins/volkovlabs-variable-panel/<PLUGINS_VERSION>/) (#1) provides a switch between Volkov Labs, Grafana, and News channel.
 
 {{< figure src="/media/docs/grafana/panels-visualizations/business-news/dashboard.png" class="border" alt="The Business News data source allows to visualize RSS and Atom feeds on Grafana dashboard." >}}
 
@@ -72,10 +72,10 @@ This detailed tutorial explains the RSS and Atom formats and shows you how to fi
 
 | Section                      | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
-| [Business Text](text)        | Demonstrates how to display feeds using the Business Text panel. |
-| [Provisioning](provisioning) | Demonstrates how to automatically provision the data source. |
-| [Release notes](release)     | Stay up to date with the latest features and updates.        |
+| [Business Text](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/<PLUGINS_VERSION>/business-text/) | Demonstrates how to display feeds using the Business Text panel. |
+| [Provisioning](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/<PLUGINS_VERSION>/provisioning/) | Demonstrates how to automatically provision the data source. |
+| [Release notes](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/<PLUGINS_VERSION>/release/) | Stay up to date with the latest features and updates.        |
 
 ## License
 
-Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/business-news/blob/main/LICENSE).
+Apache License Version 2.0, see [LICENSE](https://github.com/grafana/business-news/blob/main/LICENSE).

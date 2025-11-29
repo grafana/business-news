@@ -14,7 +14,7 @@ weight: 20
 
 # Business Text
 
-The [Business Text visualization panel](/plugins/business-text) is a perfect companion to Business News Data Source.
+The Business Text visualization panel<!--add link to docs here --> is a perfect companion to Business News Data Source.
 
 {{< figure src="/media/docs/grafana/panels-visualizations/business-news/dynamic-text.png" class="border" alt="The Business Text panel visualizes the RSS feed from a YouTube channel." >}}
 
