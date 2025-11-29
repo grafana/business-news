@@ -20,7 +20,7 @@ The [Business Text visualization panel](/plugins/business-text) is a perfect com
 
 ## Disable Sanitize HTML
 
-To display HTML returned from feeds, disable the Sanitize HTML parameter.
+To display HTML returned from feeds, disable the **Sanitize HTML** parameter.
 
 ### Docker
 
@@ -30,7 +30,7 @@ GF_PANELS_DISABLE_SANITIZE_HTML=true
 
 ## Example
 
-To display the YouTube feed with the latest videos we used HTML and Handlebars template for data fields.
+To display the YouTube feed with the latest videos, this example uses HTML and Handlebars templates for data fields.
 
 | Handlebar value                       | Description                          |
 | ------------------------------------- | ------------------------------------ |
@@ -40,7 +40,7 @@ To display the YouTube feed with the latest videos we used HTML and Handlebars t
 | `{{media:group:media:thumbnail:url}}` | Thumbnail URL.                       |
 | `{{title}}`                           | Title.                               |
 
-Template (Content) was displayed for each row as defined in the options.
+The template (Content) displays for each row as defined in the options.
 
 ```html
 <table width="100%" style="border: 0">
