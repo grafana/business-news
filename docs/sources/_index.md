@@ -13,17 +13,12 @@ weight: 10
 
 # Business News
 
-<!-- Get Irene's opinion about what to do with this 
+{{< admonition type="caution" >}}
+As part of an effort to streamline and modernize, the Business News data source has been deprecated.
+To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
 
-:::warning Announcement
-We are announcing the retirement of the Business News data source, effective immediately, as part of our ongoing effort to streamline and modernize our Grafana plugin ecosystem. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
-
-### Why this change?
-
-The retirement aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
-:::
-
--->
+The deprecation aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
+{{< /admonition >}}
 
 The Business News data source is a plugin for Grafana that retrieves RSS and Atom feeds and allows visualizing them using Business Text and other panels.
 

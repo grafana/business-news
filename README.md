@@ -8,13 +8,12 @@
 [![codecov](https://codecov.io/gh/VolkovLabs/business-news/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/business-news)
 [![CodeQL](https://github.com/VolkovLabs/business-news/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/business-news/actions/workflows/codeql-analysis.yml)
 
-## Announcement
+{{< admonition type="caution" >}}
+As part of an effort to streamline and modernize, the Business News data source has been deprecated. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
 
-We are announcing the retirement of the Business News data source, effective immediately, as part of our ongoing effort to streamline and modernize our Grafana plugin ecosystem. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
+The deprecation aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
 
-### Why This Change?
-
-The retirement aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
+{{< /admonition >}}
 
 ## Introduction
 
