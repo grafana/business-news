@@ -53,7 +53,7 @@ grafana cli plugins install volkovlabs-rss-datasource
 - Filters items/entries based on the selected time range.
 - Lets you specify query parameters with dashboard variables.
 
-The following example shows a dashboard that combines five Business News data sources, each paired with the Business Text panels<!--add link to docs here -->. The [Business Variable panel](https://grafana.com/docs/plugins/volkovlabs-variable-panel/<PLUGINS_VERSION>/) (#1) provides a switch between Volkov Labs, Grafana, and News channel.
+The following example shows a dashboard that combines five Business News data sources, each paired with [Business Text panels](https://grafana.com/docs/plugins/marcusolsson-dynamictext-panel/<PLUGINS_VERSION>/). The [Business Variable panel](https://grafana.com/docs/plugins/volkovlabs-variable-panel/<PLUGINS_VERSION>/) (#1) provides a switch between Volkov Labs, Grafana, and News channel.
 
 {{< figure src="/media/docs/grafana/panels-visualizations/business-news/dashboard.png" class="border" alt="The Business News data source allows to visualize RSS and Atom feeds on Grafana dashboard." >}}
 
