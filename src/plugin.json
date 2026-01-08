@@ -16,11 +16,11 @@
     "links": [
       {
         "name": "Documentation",
-        "url": "https://volkovlabs.io/plugins/business-news/"
+        "url": "https://grafana.com/docs/plugins/volkovlabs-rss-datasource/"
       },
       {
         "name": "GitHub",
-        "url": "https://github.com/VolkovLabs/business-news"
+        "url": "https://github.com/grafana/business-news"
       }
     ],
     "logos": {
