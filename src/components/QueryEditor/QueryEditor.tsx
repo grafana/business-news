@@ -1,5 +1,5 @@
 import { QueryEditorProps, SelectableValue } from '@grafana/data';
-import { CollapsableSection, InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
+import { ControlledCollapse, InlineField, InlineFieldRow, Input, Select } from '@grafana/ui';
 import { defaults } from 'lodash';
 import React, { ChangeEvent, PureComponent } from 'react';
 
@@ -71,9 +71,9 @@ export class QueryEditor extends PureComponent<Props> {
           </InlineField>
         </InlineFieldRow>
 
-        <CollapsableSection label="URL Parameters" isOpen={true}>
+        <ControlledCollapse label="URL Parameters" isOpen={true}>
           <ParametersEditor query={query} onChange={onChange} onRunQuery={onRunQuery} />
-        </CollapsableSection>
+        </ControlledCollapse>
       </div>
     );
   }

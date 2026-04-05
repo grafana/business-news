@@ -27,6 +27,7 @@
 - Fixed review issues: depends_on required, healthcheck rate limiting, trailing whitespace
 - Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
 - Fixed Button aria-label required by Grafana 12 in ParametersEditor
+- Replaced deprecated CollapsableSection with ControlledCollapse in QueryEditor
 
 ## 4.4.0 (2025-07-12)
 
