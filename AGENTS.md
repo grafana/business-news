@@ -227,3 +227,11 @@ before pushing.
   changes.
 - **Always create pull requests as drafts**
   (`gh pr create --draft`).
+
+## Important
+
+Always create a branch before making any changes. Never commit directly to `main`.
+
+Do not add a `Co-Authored-By` line to commit messages.
+
+When checking out a branch or `main`, always `git fetch` and `git pull` to ensure you have the latest changes.
