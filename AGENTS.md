@@ -190,6 +190,8 @@ files, and server dirs are excluded from linting.
   `npx cspell "**/*.{ts,tsx,js,jsx,json,md,yaml,yml}"`
   and fix any issues before committing. Add new words
   to `cspell.config.json` if they are legitimate.
+- **Always run `npm run typecheck`** when `src/` files
+  are changed and fix any type errors before committing.
 - **Always run markdownlint-cli** on markdown files
   before committing:
   `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md`
