@@ -32,7 +32,7 @@ npm run start                  # Start Grafana via Docker Compose (dev profile)
 npm run stop                   # Stop Docker containers
 
 # Spell check
-npx cspell "**/*.{ts,tsx,js,jsx,json,md}"
+npx cspell "**/*.{ts,tsx,js,jsx,json,md,yaml,yml}"
 ```
 
 Node version: **24** (see `.nvmrc`). Minimum supported: `>=24`.
@@ -187,12 +187,12 @@ files, and server dirs are excluded from linting.
 - Grafana API docs:
   <https://grafana.com/developers/plugin-tools/llms.txt>
 - **Always run cspell** after making changes:
-  `npx cspell "**/*.{ts,tsx,js,jsx,json,md}"`
+  `npx cspell "**/*.{ts,tsx,js,jsx,json,md,yaml,yml}"`
   and fix any issues before committing. Add new words
   to `cspell.config.json` if they are legitimate.
 - **Always run markdownlint-cli** on markdown files
   before committing:
-  `npx markdownlint-cli AGENTS.md README.md CHANGELOG.md --config .markdownlint.yaml`
+  `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md`
   and fix any issues before committing.
 - **Always update `CHANGELOG.md` before committing.**
   Every commit must include the corresponding changelog

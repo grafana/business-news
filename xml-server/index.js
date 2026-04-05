@@ -1,4 +1,5 @@
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 const xmlbuilder = require('xmlbuilder');
 const fs = require('fs');
 const path = require('path');
@@ -7,6 +8,15 @@ const path = require('path');
  * Express
  */
 const app = express();
+
+/**
+ * Rate limiting
+ */
+const limiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 100,
+});
+app.use(limiter);
 
 /**
  * Port

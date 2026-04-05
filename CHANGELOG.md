@@ -18,6 +18,8 @@
 - Added Google Workspace Atom feed to xml-server for provisioning test
 - Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
 - Updated glob to 13.0.6
+- Added rate limiting to xml-server
+- Added missing words to cspell configuration
 
 ## 4.4.0 (2025-07-12)
 

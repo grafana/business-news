@@ -6,6 +6,7 @@
     "dist",
     "coverage",
     "provisioning/dashboards/**",
+    "playwright-report",
     "package-lock.json",
     "yarn.lock"
   ],
@@ -41,6 +42,10 @@
     "testid",
     "combobox",
     "xmlbuilder",
-    "subresource"
+    "subresource",
+    "typecheck",
+    "healthcheck",
+    "yesoreyeram",
+    "doesn"
   ]
 }
