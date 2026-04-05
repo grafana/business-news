@@ -28,7 +28,7 @@ npm run test:e2e:dev           # Playwright UI mode
 npm run test:e2e:docker        # Full Docker Compose (Grafana + tests)
 
 # Local Development
-npm run start                  # Start Grafana via Docker Compose (latest)
+npm run start                  # Start Grafana via Docker Compose (dev profile)
 npm run stop                   # Stop Docker containers
 
 # Spell check
