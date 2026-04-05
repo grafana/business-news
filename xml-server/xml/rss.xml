@@ -5,6 +5,15 @@
   <title>W3Schools Home Page</title>
   <link>https://www.w3schools.com</link>
   <description>Free web building tutorials</description>
+  <generator>W3Schools Feed Generator</generator>
+  <lastBuildDate>Sat, 01 Jan 2025 12:00:00 GMT</lastBuildDate>
+  <webMaster>webmaster@w3schools.com</webMaster>
+  <ttl>60</ttl>
+  <image>
+    <url>https://www.w3schools.com/images/logo.png</url>
+    <title>W3Schools</title>
+    <link>https://www.w3schools.com</link>
+  </image>
   <item>
     <title>RSS Tutorial</title>
     <link>https://www.w3schools.com/xml/xml_rss.asp</link>
@@ -15,7 +24,7 @@
     <link>https://www.w3schools.com/xml</link>
     <description>New XML tutorial on W3Schools</description>
   </item>
-   <item>
+  <item>
     <title>XML Tutorial 4</title>
     <link>https://www.w3schools.com/xml</link>
     <description>New XML tutorial on W3Schools</description>

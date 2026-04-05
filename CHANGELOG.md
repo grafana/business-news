@@ -13,6 +13,8 @@
 - Fixed markdownlint errors across markdown files
 - Added markdownlint-cli rule to AGENTS.md
 - Added missing words to cspell configuration
+- Fixed E2E tests to use local xml-server instead of external URLs
+- Added xml-server healthcheck and Grafana dependency in docker-compose
 
 ## 4.4.0 (2025-07-12)
 
