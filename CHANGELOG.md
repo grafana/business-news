@@ -17,6 +17,7 @@
 - Added xml-server healthcheck and Grafana dependency in docker-compose
 - Added Google Workspace Atom feed to xml-server for provisioning test
 - Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
+- Updated glob to 13.0.6
 
 ## 4.4.0 (2025-07-12)
 
