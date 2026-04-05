@@ -28,6 +28,7 @@
 - Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
 - Fixed Button aria-label required by Grafana 12 in ParametersEditor
 - Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
+- Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
 
 ## 4.4.0 (2025-07-12)
 

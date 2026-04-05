@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "alerting": false,
   "dependencies": {
-    "grafanaDependency": ">=10.1.0",
+    "grafanaDependency": ">=11.6.0",
     "plugins": []
   },
   "id": "volkovlabs-rss-datasource",
