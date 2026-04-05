@@ -86,6 +86,7 @@ export const ParametersEditor = ({ query, onChange, onRunQuery }: Props) => {
               <Button
                 variant="destructive"
                 title="Remove"
+                aria-label="Remove parameter"
                 onClick={() => removeParameters(param)}
                 icon="trash-alt"
                 data-testid={TEST_IDS.parametersEditor.buttonRemove}
