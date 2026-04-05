@@ -29,6 +29,7 @@
 - Fixed Button aria-label required by Grafana 12 in ParametersEditor
 - Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
 - Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
+- Added cspell and markdownlint-cli2 as devDependencies
 
 ## 4.4.0 (2025-07-12)
 
