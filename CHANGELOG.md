@@ -12,6 +12,7 @@
 - Fixed Playwright E2E Docker configuration
 - Fixed markdownlint errors across markdown files
 - Added markdownlint-cli rule to AGENTS.md
+- Added missing words to cspell configuration
 
 ## 4.4.0 (2025-07-12)
 

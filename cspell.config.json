@@ -37,6 +37,10 @@
     "arep",
     "copywritten",
     "vfauth",
-    "bdmc"
+    "bdmc",
+    "testid",
+    "combobox",
+    "xmlbuilder",
+    "subresource"
   ]
 }
