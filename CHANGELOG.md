@@ -21,6 +21,7 @@
 - Added rate limiting to xml-server
 - Added missing words to cspell configuration
 - Updated xml-server to Express 5, removed unused deps (fs, path, kill-port)
+- Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 
 ## 4.4.0 (2025-07-12)
 
