@@ -24,6 +24,7 @@ services:
     ports:
       - 8001:8001
     profiles:
+      - dev
       - playwright
 
   playwright:
