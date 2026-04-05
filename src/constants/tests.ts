@@ -7,8 +7,8 @@ export const TEST_IDS = {
   },
   parametersEditor: {
     row: 'data-testid parameters-editor row',
-    buttonAdd: 'data-testid paremeters-editor button-add',
-    buttonRemove: 'data-testid paremeters-editor button-remove',
+    buttonAdd: 'data-testid parameters-editor button-add',
+    buttonRemove: 'data-testid parameters-editor button-remove',
   },
   queryEditor: {
     root: 'data-testid query-editor root',
