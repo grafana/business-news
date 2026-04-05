@@ -1,0 +1,42 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "provisioning/dashboards/**",
+    "package-lock.json",
+    "yarn.lock"
+  ],
+  "words": [
+    "volkovlabs",
+    "Volkov",
+    "Olsson",
+    "marcusolsson",
+    "dynamictext",
+    "gohugo",
+    "jpath",
+    "rgba",
+    "timepicker",
+    "rowspan",
+    "cellspacing",
+    "xmls",
+    "Grafana",
+    "grafana",
+    "datasource",
+    "Ritzel",
+    "Côrtes",
+    "Paixão",
+    "Blacktiger",
+    "Qadniwbuk",
+    "Equalwith",
+    "Grafa",
+    "tacplus",
+    "mgmt",
+    "arep",
+    "copywritten",
+    "vfauth",
+    "bdmc"
+  ]
+}
