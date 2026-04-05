@@ -12,7 +12,7 @@ const app = express();
 /**
  * Port
  */
-const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1]) : 8001;
+const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1], 10) : 8001;
 
 /**
  * Health-Check (before rate limiter)

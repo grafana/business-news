@@ -20,7 +20,7 @@
 - Updated glob to 13.0.6
 - Added rate limiting to xml-server
 - Added missing words to cspell configuration
-- Updated xml-server to Express 5, removed unused deps (fs, path, kill-port)
+- Updated xml-server to Express 5, removed unnecessary npm packages (fs, path, kill-port) from xml-server/package.json
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 - Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
 - Updated plugin.json author to Grafana Labs
@@ -30,6 +30,8 @@
 - Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
 - Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
 - Added cspell and markdownlint-cli2 as devDependencies
+- Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
+- Fixed missing radix parameter in xml-server parseInt call
 
 ## 4.4.0 (2025-07-12)
 
