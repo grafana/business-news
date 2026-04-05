@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://www.google.com/appsstatus/dashboard</id>
+  <title>Google Workspace Status</title>
+  <updated>2025-01-01T12:00:00Z</updated>
+  <author>
+    <name>Google Workspace</name>
+  </author>
+  <entry>
+    <id>tag:google.com,2025:workspace-status-001</id>
+    <title>Gmail service restored</title>
+    <updated>2025-01-01T12:00:00Z</updated>
+    <content type="html">Gmail service has been restored.</content>
+    <author>
+      <name>Google Workspace</name>
+    </author>
+  </entry>
+</feed>

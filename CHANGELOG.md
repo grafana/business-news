@@ -15,6 +15,7 @@
 - Added missing words to cspell configuration
 - Fixed E2E tests to use local xml-server instead of external URLs
 - Added xml-server healthcheck and Grafana dependency in docker-compose
+- Added Google Workspace Atom feed to xml-server for provisioning test
 
 ## 4.4.0 (2025-07-12)
 

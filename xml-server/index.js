@@ -46,7 +46,23 @@ app.get('/rss', (req, res) => {
 });
 
 /**
- * RSS feed
+ * Google Workspace Atom feed
+ */
+app.get('/google', (req, res) => {
+  const filePath = path.join(__dirname, 'xml', 'google.xml');
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Internal Server Error');
+    } else {
+      res.type('application/atom+xml');
+      res.send(data);
+    }
+  });
+});
+
+/**
+ * Atom feed
  */
 app.get('/feed', (req, res) => {
   const filePath = path.join(__dirname, 'xml', 'feed.xml');

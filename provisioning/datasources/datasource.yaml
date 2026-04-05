@@ -99,6 +99,15 @@ datasources:
     jsonData:
       url: https://grafana.com/docs/grafana-cloud/whats-new/index.xml
       feedType: rss
+  - name: Google Workspace
+    type: volkovlabs-rss-datasource
+    access: proxy
+    orgId: 1
+    uid: PE12154EB4CA97411
+    version: 1
+    editable: true
+    jsonData:
+      feed: http://server:8001/google
   - name: XML Server RSS Local
     type: volkovlabs-rss-datasource
     access: proxy
