@@ -209,7 +209,9 @@ files, and server dirs are excluded from linting.
   update as an atomic pair — never stop between them.
   Use `gh pr edit` to update the title and body with
   well-formatted text that reflects all changes across
-  the entire branch.
+  the entire branch. **Wrap PR summary lines at 120
+  characters** — use the full width, do not wrap
+  shorter than necessary.
 - **Prefer subagents** for research, code exploration,
   and multi-step work. Use the Task tool with
   `explore` or `general` agents rather than running
