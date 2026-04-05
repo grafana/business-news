@@ -8,8 +8,8 @@
   "id": "volkovlabs-rss-datasource",
   "info": {
     "author": {
-      "name": "Volkov Labs",
-      "url": "https://volkovlabs.io"
+      "name": "Grafana Labs",
+      "url": "https://grafana.com"
     },
     "description": "Visualize RSS/Atom feeds",
     "keywords": ["rss", "atom", "news"],

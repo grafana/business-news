@@ -22,6 +22,8 @@
 - Added missing words to cspell configuration
 - Updated xml-server to Express 5, removed unused deps (fs, path, kill-port)
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
+- Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
+- Updated plugin.json author to Grafana Labs
 
 ## 4.4.0 (2025-07-12)
 
