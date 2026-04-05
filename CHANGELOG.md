@@ -19,7 +19,6 @@
 - Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
 - Updated glob to 13.0.6
 - Added rate limiting to xml-server
-- Added missing words to cspell configuration
 - Updated xml-server to Express 5, removed unnecessary npm packages (fs, path, kill-port) from xml-server/package.json
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 - Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
