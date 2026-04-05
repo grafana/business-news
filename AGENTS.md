@@ -73,7 +73,8 @@ provisioning/                  # Grafana provisioning for local dev
 
 **Key design details:**
 
-- Feed fetches go through Grafana's backend proxy (plugin.json `/feed` route) for CORS/auth handling — never direct browser requests
+- Feed fetches go through Grafana's backend proxy (plugin.json `/feed` route)
+  for CORS/auth handling — never direct browser requests
 - XML parsing uses custom array handling (`ALWAYS_ARRAY` constant) to normalize RSS/RDF/Atom format differences
 - Nested field extraction handles meta tags, `content:encoded` HTML parsing (h4, images), and `media:group` (YouTube)
 - Items can be filtered by time range when a date field is specified
@@ -189,6 +190,10 @@ files, and server dirs are excluded from linting.
   `npx cspell "**/*.{ts,tsx,js,jsx,json,md}"`
   and fix any issues before committing. Add new words
   to `cspell.config.json` if they are legitimate.
+- **Always run markdownlint-cli** on markdown files
+  before committing:
+  `npx markdownlint-cli AGENTS.md README.md CHANGELOG.md --config .markdownlint.yaml`
+  and fix any issues before committing.
 - **Always update `CHANGELOG.md` before committing.**
   Every commit must include the corresponding changelog
   entry. Do not commit code changes without first updating

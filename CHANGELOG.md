@@ -10,14 +10,26 @@
 - Added coverage to CI test script
 - Fixed spelling errors
 - Fixed Playwright E2E Docker configuration
+- Fixed markdownlint errors across markdown files
+- Added markdownlint-cli rule to AGENTS.md
 
 ## 4.4.0 (2025-07-12)
 
-We are announcing the retirement of the Business News data source, effective immediately, as part of our ongoing effort to streamline and modernize our Grafana plugin ecosystem. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
+We are announcing the retirement of the Business News data source,
+effective immediately, as part of our ongoing effort to streamline
+and modernize our Grafana plugin ecosystem. To ensure uninterrupted
+access to news and data feeds, we strongly recommend migrating to
+the Infinity data source, a robust and versatile replacement
+designed to meet your monitoring and visualization needs.
 
 ### Why This Change?
 
-The retirement aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
+The retirement aligns with industry trends toward more integrated
+and scalable data solutions, addressing the complexities of managing
+fragmented data sources. The Infinity data source offers enhanced
+flexibility, supporting a wide range of data formats and real-time
+updates, making it an ideal choice for business analytics and
+dashboards.
 
 ## 4.3.0 (2024-12-23)
 
@@ -67,7 +79,7 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Bugfix
 
-- Removed root URL http://localhost:3000 added during migration to Plugin Tools
+- Removed root URL `http://localhost:3000` added during migration to Plugin Tools
 
 ## 3.0.0 (2023-07-26)
 
@@ -151,7 +163,9 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Breaking changes
 
-- Automatic parsing of `author.name` and `media:thumbnail.url` fields break templates who uses them. To fix it, just replace it with `author` and `media:thumbnail`. Thanks to @vfauth for testing.
+- Automatic parsing of `author.name` and `media:thumbnail.url` fields break
+  templates who uses them. To fix it, just replace it with `author` and
+  `media:thumbnail`. Thanks to @vfauth for testing.
 
 ### Features / Enhancements
 
@@ -199,8 +213,8 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Features / Enhancements
 
-- Extract <img src="X"> from the <figure> (#5)
-- Extract Guid's text from the <guid> (#5)
+- Extract `<img src="X">` from the `<figure>` (#5)
+- Extract Guid's text from the `<guid>` (#5)
 - Update dashboards layout
 
 ## 1.0.0 (2021-12-26)
