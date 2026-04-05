@@ -24,6 +24,8 @@
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 - Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
 - Updated plugin.json author to Grafana Labs
+- Fixed review issues: depends_on required, healthcheck rate limiting, trailing whitespace
+- Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
 
 ## 4.4.0 (2025-07-12)
 

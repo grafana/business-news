@@ -160,7 +160,6 @@ const apiMock = {
 };
 
 jest.mock('../api/api', () => ({
-   
   Api: jest.fn().mockImplementation(() => apiMock),
 }));
 

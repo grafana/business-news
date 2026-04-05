@@ -10,6 +10,18 @@ const path = require('path');
 const app = express();
 
 /**
+ * Port
+ */
+const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1]) : 8001;
+
+/**
+ * Health-Check (before rate limiter)
+ */
+app.get('/ping', (req, res) => {
+  res.status(200).send('Pong');
+});
+
+/**
  * Rate limiting
  */
 const limiter = rateLimit({
@@ -17,18 +29,6 @@ const limiter = rateLimit({
   max: 100,
 });
 app.use(limiter);
-
-/**
- * Port
- */
-const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1]) : 8001;
-
-/**
- * Health-Check
- */
-app.get('/ping', (req, res) => {
-  res.status(200).send('Pong');
-});
 
 /**
  * Random feed
