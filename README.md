@@ -31,7 +31,7 @@ and other panels.
 
 ## Requirements
 
-- Business News data source 4.X requires **Grafana 10.1** or **Grafana 11**.
+- Business News data source 4.X requires **Grafana 11.6** or newer.
 - RSS/Atom data source 3.X requires **Grafana 9** or **Grafana 10**.
 - RSS/Atom data source 2.X requires **Grafana 8.5** or **Grafana 9**.
 - RSS/Atom data source 1.X requires **Grafana 8**.

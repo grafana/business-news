@@ -31,6 +31,7 @@
 - Added cspell and markdownlint-cli2 as devDependencies
 - Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
 - Fixed missing radix parameter in xml-server parseInt call
+- Updated README requirements to match Grafana 11.6 minimum
 
 ## 4.4.0 (2025-07-12)
 
