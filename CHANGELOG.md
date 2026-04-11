@@ -29,6 +29,7 @@
 - Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
 - Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
 - Updated @grafana/plugin-e2e to 3.4.12, cspell to 10.0.0, prettier to 3.8.2, webpack to 5.106.1
+- Added no AI attribution rule to AGENTS.md
 - Added cspell and markdownlint-cli2 as devDependencies
 - Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
 - Fixed missing radix parameter in xml-server parseInt call

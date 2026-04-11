@@ -206,6 +206,9 @@ files, and server dirs are excluded from linting.
   Do not push as part of completing a task.
   Never chain `git commit && git push` in one command.
   Always wait for the user to explicitly ask to push.
+- **Never add AI attribution** (e.g., "Generated with
+  Claude Code") to PR summaries, commit messages, or
+  any other project artifacts.
 - **After pushing, always update the PR summary** if a
   PR exists for the current branch. Treat push and PR
   update as an atomic pair — never stop between them.
