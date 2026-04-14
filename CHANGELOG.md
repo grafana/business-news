@@ -1,12 +1,57 @@
 # Change Log
 
+## 4.5.0 (UNRELEASED)
+
+### Features / Enhancements
+
+- Updated to Node 24
+- Updated to latest plugin build tooling
+- Added cspell configuration
+- Added coverage to CI test script
+- Fixed spelling errors
+- Fixed Playwright E2E Docker configuration
+- Fixed markdownlint errors across markdown files
+- Added markdownlint-cli rule to AGENTS.md
+- Added missing words to cspell configuration
+- Fixed E2E tests to use local xml-server instead of external URLs
+- Added xml-server healthcheck and Grafana dependency in docker-compose
+- Added Google Workspace Atom feed to xml-server for provisioning test
+- Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
+- Updated glob to 13.0.6
+- Added rate limiting to xml-server
+- Updated xml-server to Express 5, removed unnecessary npm packages (fs, path, kill-port) from xml-server/package.json
+- Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
+- Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
+- Updated plugin.json author to Grafana Labs
+- Fixed review issues: depends_on required, healthcheck rate limiting, trailing whitespace
+- Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
+- Fixed Button aria-label required by Grafana 12 in ParametersEditor
+- Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
+- Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
+- Updated @grafana/plugin-e2e to 3.4.12, cspell to 10.0.0, prettier to 3.8.2, webpack to 5.106.1
+- Added no AI attribution rule to AGENTS.md
+- Added cspell and markdownlint-cli2 as devDependencies
+- Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
+- Fixed missing radix parameter in xml-server parseInt call
+- Updated README requirements to match Grafana 11.6 minimum
+
 ## 4.4.0 (2025-07-12)
 
-We are announcing the retirement of the Business News data source, effective immediately, as part of our ongoing effort to streamline and modernize our Grafana plugin ecosystem. To ensure uninterrupted access to news and data feeds, we strongly recommend migrating to the Infinity data source, a robust and versatile replacement designed to meet your monitoring and visualization needs.
+We are announcing the retirement of the Business News data source,
+effective immediately, as part of our ongoing effort to streamline
+and modernize our Grafana plugin ecosystem. To ensure uninterrupted
+access to news and data feeds, we strongly recommend migrating to
+the Infinity data source, a robust and versatile replacement
+designed to meet your monitoring and visualization needs.
 
 ### Why This Change?
 
-The retirement aligns with industry trends toward more integrated and scalable data solutions, addressing the complexities of managing fragmented data sources. The Infinity data source offers enhanced flexibility, supporting a wide range of data formats and real-time updates, making it an ideal choice for business analytics and dashboards.
+The retirement aligns with industry trends toward more integrated
+and scalable data solutions, addressing the complexities of managing
+fragmented data sources. The Infinity data source offers enhanced
+flexibility, supporting a wide range of data formats and real-time
+updates, making it an ideal choice for business analytics and
+dashboards.
 
 ## 4.3.0 (2024-12-23)
 
@@ -56,7 +101,7 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Bugfix
 
-- Removed root URL http://localhost:3000 added during migration to Plugin Tools
+- Removed root URL `http://localhost:3000` added during migration to Plugin Tools
 
 ## 3.0.0 (2023-07-26)
 
@@ -140,7 +185,9 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Breaking changes
 
-- Automatic parsing of `author.name` and `media:thumbnail.url` fields break templates who uses them. To fix it, just replace it with `author` and `media:thumbnail`. Thanks to @vfauth for testing.
+- Automatic parsing of `author.name` and `media:thumbnail.url` fields break
+  templates who uses them. To fix it, just replace it with `author` and
+  `media:thumbnail`. Thanks to @vfauth for testing.
 
 ### Features / Enhancements
 
@@ -188,8 +235,8 @@ The retirement aligns with industry trends toward more integrated and scalable d
 
 ### Features / Enhancements
 
-- Extract <img src="X"> from the <figure> (#5)
-- Extract Guid's text from the <guid> (#5)
+- Extract `<img src="X">` from the `<figure>` (#5)
+- Extract Guid's text from the `<guid>` (#5)
 - Update dashboards layout
 
 ## 1.0.0 (2021-12-26)

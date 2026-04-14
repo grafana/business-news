@@ -1,4 +1,5 @@
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 const xmlbuilder = require('xmlbuilder');
 const fs = require('fs');
 const path = require('path');
@@ -11,14 +12,23 @@ const app = express();
 /**
  * Port
  */
-const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1]) : 8001;
+const port = process.argv.includes('--port') ? parseInt(process.argv[process.argv.indexOf('--port') + 1], 10) : 8001;
 
 /**
- * Health-Check
+ * Health-Check (before rate limiter)
  */
 app.get('/ping', (req, res) => {
   res.status(200).send('Pong');
 });
+
+/**
+ * Rate limiting
+ */
+const limiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 100,
+});
+app.use(limiter);
 
 /**
  * Random feed
@@ -46,7 +56,23 @@ app.get('/rss', (req, res) => {
 });
 
 /**
- * RSS feed
+ * Google Workspace Atom feed
+ */
+app.get('/google', (req, res) => {
+  const filePath = path.join(__dirname, 'xml', 'google.xml');
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Internal Server Error');
+    } else {
+      res.type('application/atom+xml');
+      res.send(data);
+    }
+  });
+});
+
+/**
+ * Atom feed
  */
 app.get('/feed', (req, res) => {
   const filePath = path.join(__dirname, 'xml', 'feed.xml');

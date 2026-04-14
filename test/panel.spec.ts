@@ -36,9 +36,6 @@ test.describe('RSS datasource', () => {
 
       await configEditor.checkPresenceURLEditor();
 
-      /**
-       * https://volkovlabs.io/blog/rss.xml
-       */
       await configEditor.setPath(datasource.jsonData.feed);
       await configEditor.checkSaveSuccess();
     });
@@ -95,20 +92,15 @@ test.describe('RSS datasource', () => {
         'generator',
         'lastBuildDate',
         'link',
-        'webMaster',
-        'ttl',
-        'imageUrl',
-        'imageTitle',
-        'imageLink',
       ]);
 
       /**
        * Check data values should be one row
        */
       await expect(panelEditPage.panel.data).toContainText([
-        'Volkov Labs Blog',
-        'Volkov Labs Blog',
-        'https://github.com/jpmonette/feed',
+        'W3Schools Home Page',
+        'Free web building tutorials',
+        'W3Schools Feed Generator',
       ]);
     });
 

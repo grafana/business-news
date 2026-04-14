@@ -243,7 +243,7 @@ export class Api {
     });
 
     /**
-     * If enties not found, return Channel
+     * If entries not found, return Channel
      */
     if (!feed.entry || query.feedType === FeedTypeValue.CHANNEL) {
       return [channelFrame];
