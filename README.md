@@ -66,7 +66,7 @@ grafana-cli plugins install volkovlabs-rss-datasource
 | --- | --- |
 | [Business Text](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/business-text/) | Demonstrates how to display feed using Dynamic Text panel. |
 | [Provisioning](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/provisioning/) | Demonstrates how to automatically provision the data source. |
-| [Release notes](https://grafana.com/docs/plugins/volkovlabs-rss-datasource/latest/release/) | Stay up to date with the latest features and updates. |
+| [Release notes](https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/?tab=changelog) | Stay up to date with the latest features and updates. |
 
 ## Business Suite for Grafana
 
