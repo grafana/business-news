@@ -194,12 +194,12 @@ files, and server dirs are excluded from linting.
   are changed and fix any type errors before committing.
 - **Always run markdownlint-cli** on markdown files
   before committing:
-  `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md`
+  `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md src/CHANGELOG.md`
   and fix any issues before committing.
-- **Always update `CHANGELOG.md` before committing.**
-  Every commit must include the corresponding changelog
-  entry. Do not commit code changes without first updating
-  the changelog in the same commit.
+- **Always update both changelogs before committing.**
+  Every commit must include entries in the appropriate changelog(s).
+  Do not commit code changes without first updating the changelog(s)
+  in the same commit. See Changelog Policy below for which file to update.
 - **NEVER commit unless the user explicitly asks.**
   Do not commit as part of completing a task.
 - **NEVER push unless the user explicitly asks.**
@@ -225,11 +225,30 @@ files, and server dirs are excluded from linting.
 
 ## Changelog Policy
 
-**Always update `CHANGELOG.md` when making changes.** Every commit that
-modifies code, documentation, dependencies, or configuration must have a
-corresponding entry in the changelog under the current unreleased version
-section. Add entries as part of the same commit or as a follow-up commit
-before pushing.
+This project maintains two changelog files:
+
+- **`CHANGELOG.md`** — end-user facing. Covers features, bug fixes, breaking
+  changes, and Grafana compatibility updates that affect plugin users.
+- **`src/CHANGELOG.md`** — technical/developer facing. Covers dependency
+  upgrades, CI/CD changes, build tooling, test infrastructure, ESLint,
+  Docker, and other contributor-relevant changes.
+
+Both files follow [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format:
+
+- Title: `# Changelog`
+- Header boilerplate: "All notable changes to this project will be documented
+  in this file. The format is based on Keep a Changelog, and this project
+  adheres to Semantic Versioning."
+- Unreleased section: `## [Unreleased]`
+- Released versions: `## [X.Y.Z] - YYYY-MM-DD`
+- Subsections for `CHANGELOG.md`: `### Breaking changes`, `### Features / Enhancements`,
+  `### Bug fixes` as appropriate
+- Subsections for `src/CHANGELOG.md` (in this order): `### Build / Tooling`,
+  `### Code Quality`, `### E2E / Docker`, `### Dependencies`
+
+Add entries to one or both files depending on the nature of the change.
+Every commit that modifies code, documentation, dependencies, or configuration
+must have a corresponding entry before pushing.
 
 ## Branching Policy
 

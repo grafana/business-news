@@ -1,45 +1,23 @@
-# Change Log
+# Changelog
 
-## 4.5.0 (UNRELEASED)
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Breaking changes
+
+- Requires Grafana 11.6.0 or later
 
 ### Features / Enhancements
 
-- Updated to Node 24
-- Updated to latest plugin build tooling
-- Added cspell configuration
-- Added coverage to CI test script
-- Fixed spelling errors
-- Fixed Playwright E2E Docker configuration
-- Fixed markdownlint errors across markdown files
-- Added markdownlint-cli rule to AGENTS.md
-- Added missing words to cspell configuration
-- Fixed E2E tests to use local xml-server instead of external URLs
-- Added xml-server healthcheck and Grafana dependency in docker-compose
-- Added Google Workspace Atom feed to xml-server for provisioning test
-- Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
-- Updated glob to 13.0.6
-- Added rate limiting to xml-server
-- Updated xml-server to Express 5, removed unnecessary npm packages (fs, path, kill-port) from xml-server/package.json
-- Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
-- Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
-- Updated plugin.json author to Grafana Labs
-- Fixed review issues: depends_on required, healthcheck rate limiting, trailing whitespace
-- Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
-- Fixed Button aria-label required by Grafana 12 in ParametersEditor
-- Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
-- Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
-- Updated @grafana/plugin-e2e to 3.6.1
-- Updated @swc/core to 1.15.32, eslint-plugin-react-hooks to 7.1.1, markdownlint-cli2 to 0.22.1, prettier to 3.8.3, webpack to 5.106.2
-- Pinned @playwright/test to 1.59.1 and synced test/Dockerfile to mcr.microsoft.com/playwright:v1.59.1-noble
-- Optimized test/Dockerfile: added .dockerignore, layered COPY for npm ci cache, replaced deprecated npm install --only=dev with npm ci --omit=prod, removed redundant browser install already present in Playwright base image
-- Updated @grafana/plugin-e2e to 3.4.12, cspell to 10.0.0, prettier to 3.8.2, webpack to 5.106.1
-- Added no AI attribution rule to AGENTS.md
-- Added cspell and markdownlint-cli2 as devDependencies
-- Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
-- Fixed missing radix parameter in xml-server parseInt call
-- Updated README requirements to match Grafana 11.6 minimum
+- Fixed button accessibility in the query parameter editor, required for Grafana 12 compatibility
+- Updated query editor to use current Grafana UI components
+- Updated plugin author to Grafana Labs
+- Fixed documentation links to point to grafana.com
 
-## 4.4.0 (2025-07-12)
+## [4.4.0] - 2025-07-12
 
 We are announcing the retirement of the Business News data source,
 effective immediately, as part of our ongoing effort to streamline
@@ -57,21 +35,21 @@ flexibility, supporting a wide range of data formats and real-time
 updates, making it an ideal choice for business analytics and
 dashboards.
 
-## 4.3.0 (2024-12-23)
+## [4.3.0] - 2024-12-23
 
 ### Features / Enhancements
 
 - Updated E2E tests (#86)
 - Updated to Grafana 11.4 and dependencies (#87)
 
-## 4.2.0 (2024-09-17)
+## [4.2.0] - 2024-09-17
 
 ### Features / Enhancements
 
 - Updated E2E tests to use Docker (#80)
 - Updated to Grafana 11.2 and dependencies (#81)
 
-## 4.1.0 (2024-06-07)
+## [4.1.0] - 2024-06-07
 
 ### Features / Enhancements
 
@@ -81,7 +59,7 @@ dashboards.
 - Update fields in items getting mixed up (#76)
 - Remove Alerting support in Plugin configuration (#77)
 
-## 4.0.0 (2024-05-09)
+## [4.0.0] - 2024-05-09
 
 ### Breaking changes
 
@@ -93,7 +71,7 @@ dashboards.
 - Prepared for Grafana 11 (#71)
 - Updated to Grafana 10.4.2 and dependencies (#72)
 
-## 3.1.0 (2024-02-12)
+## [3.1.0] - 2024-02-12
 
 ### Features / Enhancements
 
@@ -101,13 +79,13 @@ dashboards.
 - Updated ESLint configuration and refactoring (#62)
 - Updated to Grafana 10.3.1 (#63)
 
-## 3.0.1 (2023-08-02)
+## [3.0.1] - 2023-08-02
 
 ### Bugfix
 
 - Removed root URL `http://localhost:3000` added during migration to Plugin Tools
 
-## 3.0.0 (2023-07-26)
+## [3.0.0] - 2023-07-26
 
 ### Breaking changes
 
@@ -123,7 +101,7 @@ dashboards.
 - Removed Grafana 8.5 support (#56)
 - Updated ESLint configuration (#56)
 
-## 2.4.0 (2023-04-08)
+## [2.4.0] - 2023-04-08
 
 ### Features / Enhancements
 
@@ -132,7 +110,7 @@ dashboards.
 - Updated Documentation, Provisioning (#46)
 - Added URL parameters with variables support (#47, #48)
 
-## 2.3.0 (2022-11-16)
+## [2.3.0] - 2022-11-16
 
 ### Features / Enhancements
 
@@ -142,20 +120,20 @@ dashboards.
 - Updated to Grafana 9.2.2 (#40)
 - Updated CI to upload signed artifacts (#41)
 
-## 2.2.0 (2022-08-25)
+## [2.2.0] - 2022-08-25
 
 ### Features / Enhancements
 
 - Added YouTube video in README (#32)
 - Updated based on 9.1.1 (#35)
 
-## 2.1.0 (2022-06-23)
+## [2.1.0] - 2022-06-23
 
 ### Features / Enhancements
 
 - Added YouTube fields parsing and refactoring (#31)
 
-## 2.0.0 (2022-06-17)
+## [2.0.0] - 2022-06-17
 
 ### Breaking changes
 
@@ -165,19 +143,19 @@ dashboards.
 
 - Updated based on 9.0.0 (#30)
 
-## 1.7.0 (2022-05-21)
+## [1.7.0] - 2022-05-21
 
 ### Features / Enhancements
 
 - Added Feed URL with query parameters (#28)
 
-## 1.6.2 (2022-05-13)
+## [1.6.2] - 2022-05-13
 
 ### Breaking changes
 
 - Requires Grafana 8.3.0 or newer.
 
-## 1.6.1 (2022-05-13)
+## [1.6.1] - 2022-05-13
 
 ### Features / Enhancements
 
@@ -185,7 +163,7 @@ dashboards.
 - Updated API tests and set parsing `rss.channel.item` as array always (#25)
 - Improved test coverage (#26)
 
-## 1.6.0 (2022-05-12)
+## [1.6.0] - 2022-05-12
 
 ### Breaking changes
 
@@ -201,7 +179,7 @@ dashboards.
 
 - Can't parse GitHub releases feed (#21)
 
-## 1.5.0 (2022-04-25)
+## [1.5.0] - 2022-04-25
 
 ### Features / Enhancements
 
@@ -209,33 +187,33 @@ dashboards.
 - Added RSS 1.0 support (#19)
 - Rebuild based on 8.5.0 (#17, #20)
 
-## 1.4.0 (2022-02-18)
+## [1.4.0] - 2022-02-18
 
 ### Features / Enhancements
 
 - Updated using 8.4.0 and use PluginCheck v2 (#13, #14)
 - Select items/entries based on the selected Time Range (#3)
 
-## 1.3.1 (2022-02-02)
+## [1.3.1] - 2022-02-02
 
 ### Bug fixes
 
 - Google Workspace Atom feed failed #11
 
-## 1.3.0 (2022-01-24)
+## [1.3.0] - 2022-01-24
 
 ### Features / Enhancements
 
 - Update README with link to the Grafana Marketplace (#8)
 - Rebuild using 8.3.4 (#6)
 
-## 1.2.0 (2022-01-11)
+## [1.2.0] - 2022-01-11
 
 ### Features / Enhancements
 
 - Signed as Community datasource plugin (#7).
 
-## 1.1.0 (2021-12-27)
+## [1.1.0] - 2021-12-27
 
 ### Features / Enhancements
 
@@ -243,7 +221,7 @@ dashboards.
 - Extract Guid's text from the `<guid>` (#5)
 - Update dashboards layout
 
-## 1.0.0 (2021-12-26)
+## [1.0.0] - 2021-12-26
 
 ### Features / Enhancements
 
