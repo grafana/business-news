@@ -54,6 +54,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   present in Playwright base image
 - Synced test/Dockerfile base image to mcr.microsoft.com/playwright:v1.59.1-noble
 
+- Fixed missing `./provisioning:/app/provisioning` volume mount in the playwright service;
+  all nine E2E tests now pass against Grafana 13.0.1
+
 ### Dependencies
 
 - Updated @grafana/plugin-e2e to 3.6.1

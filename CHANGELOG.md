@@ -18,6 +18,9 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 
 ### Project Updates
 
+- Fixed E2E Docker test setup: added provisioning volume mount to the playwright service so datasource
+  and dashboard fixtures resolve correctly.
+
 - Updated CI/CD workflows.
 - Updated development scripts and tooling.
 - Changelog is now automatically stamped with version and date on release.
