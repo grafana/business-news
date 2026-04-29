@@ -1,0 +1,17 @@
+node_modules/
+.git/
+.github/
+.claude/
+.config/
+dist/
+coverage/
+xml-server/
+provisioning/
+img/
+e2e-results/
+test-results/
+playwright-report/
+playwright/.auth/
+*.log
+.eslintcache
+.DS_Store
