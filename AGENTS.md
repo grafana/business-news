@@ -194,9 +194,7 @@ files, and server dirs are excluded from linting.
   to `cspell.config.json` if they are legitimate.
 - **Always run `npm run typecheck`** when `src/` files
   are changed and fix any type errors before committing.
-- **Always run markdownlint-cli** on markdown files
-  before committing:
-  `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md src/CHANGELOG.md`
+- **Always run `npm run markdownlint`** on markdown files before committing
   and fix any issues before committing.
 - **Always update both changelogs before committing.**
   Every commit must include entries in the appropriate changelog(s).

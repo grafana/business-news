@@ -23,6 +23,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Bumped tj-actions/changed-files to v47.0.6, actions/github-script to v9.0.0
 - Switched pr-files separator to | to handle filenames containing spaces
 - Added .dockerignore to pr-files Config category
+- Removed .markdownlint.yaml; consolidated to .markdownlint-cli2.yaml (adds tables: false)
+- Added src/CHANGELOG.md to npm run markdownlint script
+- Updated pr-files.yml Config category to reference .markdownlint-cli2.yaml
 - Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 - Updated README requirements to match Grafana 11.6 minimum

@@ -10,7 +10,7 @@
     "lint": "eslint --cache .",
     "lint:fix": "npm run lint -- --fix && prettier --write --list-different .",
     "server": "docker compose up --build",
-    "markdownlint": "markdownlint-cli2 AGENTS.md CHANGELOG.md README.md",
+    "markdownlint": "markdownlint-cli2 AGENTS.md CHANGELOG.md README.md src/CHANGELOG.md",
     "sign": "npx --yes @grafana/sign-plugin@latest",
     "spellcheck": "cspell -c cspell.config.json \"**/*.{ts,tsx,js,go,md,mdx,yml,yaml,json,scss,css}\"",
     "start": "docker compose --profile dev up",
