@@ -32,7 +32,10 @@ npm run start                  # Start Grafana via Docker Compose (dev profile)
 npm run stop                   # Stop Docker containers
 
 # Spell check
-npx cspell "**/*.{ts,tsx,js,jsx,json,md,yaml,yml}"
+npm run spellcheck
+
+# Markdown lint
+npm run markdownlint
 ```
 
 Node version: **24** (see `.nvmrc`). Minimum supported: `>=24`.
@@ -186,16 +189,12 @@ files, and server dirs are excluded from linting.
 - Use `@grafana/plugin-e2e` for E2E tests.
 - Grafana API docs:
   <https://grafana.com/developers/plugin-tools/llms.txt>
-- **Always run cspell** after making changes:
-  `npx cspell "**/*.{ts,tsx,js,jsx,json,md,yaml,yml}"`
-  and fix any issues before committing. Add new words
+- **Always run `npm run spellcheck`** before committing. Fix any issues and add new words
   to `cspell.config.json` if they are legitimate.
 - **Always run `npm run typecheck`** when `src/` files
   are changed and fix any type errors before committing.
-- **Always run markdownlint-cli** on markdown files
-  before committing:
-  `npx markdownlint-cli2 AGENTS.md README.md CHANGELOG.md`
-  and fix any issues before committing.
+- **Always run `npm run markdownlint`** on any `.md` file you create or modify
+  (including `AGENTS.md`, `README.md`, `CHANGELOG.md`) and fix all reported issues before committing.
 - **Always update `CHANGELOG.md` before committing.**
   Every commit must include the corresponding changelog
   entry. Do not commit code changes without first updating
