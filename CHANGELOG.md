@@ -19,8 +19,6 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 ### Project Updates
 
 - Updated CI/CD workflows.
-- Added `markdownlint` and `spellcheck` npm scripts.
-- Converted changelog to Keep a Changelog format.
 - Updated development scripts and tooling.
 
 ## [4.4.0] - 2025-07-12
