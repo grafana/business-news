@@ -18,6 +18,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Added stamp-changelog job to publish workflow: stamps CHANGELOG.md and src/CHANGELOG.md (if present) on release
 - Bumped actions/checkout to v6, actions/setup-node to v6.4.0 across coverage workflow
 - Bumped davelosert/vitest-coverage-report-action to v2.11.2
+- Bumped actions/create-github-app-token to v3.1.1 in publish workflow
+- Bumped ArtiomTr/jest-coverage-report-action to v2.3.1 in coverage workflow
 - Added continue-on-error on base branch coverage run, base-coverage existence check
 - Switched coverage report to file-coverage-mode: changes-affected
 - Bumped tj-actions/changed-files to v47.0.6, actions/github-script to v9.0.0
