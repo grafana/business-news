@@ -12,6 +12,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Updated to latest plugin build tooling
 - Added cspell configuration
 - Added coverage to CI test script
+- Bumped CI reusable workflow to ci-cd-workflows/v7.3.1
+- Added concurrency groups to all workflows to cancel stale runs
+- Added pull-requests: read and attestations: write permissions to CI job
+- Added stamp-changelog job to publish workflow: stamps CHANGELOG.md and src/CHANGELOG.md (if present) on release
+- Bumped actions/checkout to v6, actions/setup-node to v6.4.0 across coverage workflow
+- Bumped davelosert/vitest-coverage-report-action to v2.11.2
+- Added continue-on-error on base branch coverage run, base-coverage existence check
+- Switched coverage report to file-coverage-mode: changes-affected
+- Bumped tj-actions/changed-files to v47.0.6, actions/github-script to v9.0.0
+- Switched pr-files separator to | to handle filenames containing spaces
+- Added .dockerignore to pr-files Config category
 - Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
 - Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
 - Updated README requirements to match Grafana 11.6 minimum

@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Updated query editor to use current Grafana UI components
 - Updated plugin author to Grafana Labs
 - Fixed documentation links to point to grafana.com
+- Changelog is now automatically stamped with version and date on release
 
 ## [4.4.0] - 2025-07-12
 
