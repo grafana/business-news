@@ -20,6 +20,7 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 
 - Updated CI/CD workflows.
 - Updated development scripts and tooling.
+- Changelog is now automatically stamped with version and date on release.
 
 ## [4.4.0] - 2025-07-12
 
