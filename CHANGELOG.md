@@ -28,6 +28,9 @@
 - Fixed Button aria-label required by Grafana 12 in ParametersEditor
 - Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
 - Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
+- Updated @grafana/plugin-e2e to 3.6.1
+- Updated @swc/core to 1.15.32, eslint-plugin-react-hooks to 7.1.1, markdownlint-cli2 to 0.22.1, prettier to 3.8.3, webpack to 5.106.2
+- Pinned @playwright/test to 1.59.1 and synced test/Dockerfile to mcr.microsoft.com/playwright:v1.59.1-noble
 - Updated @grafana/plugin-e2e to 3.4.12, cspell to 10.0.0, prettier to 3.8.2, webpack to 5.106.1
 - Added no AI attribution rule to AGENTS.md
 - Added cspell and markdownlint-cli2 as devDependencies
