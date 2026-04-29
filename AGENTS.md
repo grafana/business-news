@@ -27,15 +27,16 @@ npm run test:e2e               # Headless Playwright
 npm run test:e2e:dev           # Playwright UI mode
 npm run test:e2e:docker        # Full Docker Compose (Grafana + tests)
 
-# Local Development
-npm run start                  # Start Grafana via Docker Compose (dev profile)
-npm run stop                   # Stop Docker containers
 
 # Spell check
 npm run spellcheck
 
 # Markdown lint
 npm run markdownlint
+
+# Local Development
+npm run start                  # Start Grafana via Docker Compose (dev profile)
+npm run stop                   # Stop Docker containers
 ```
 
 Node version: **24** (see `.nvmrc`). Minimum supported: `>=24`.
