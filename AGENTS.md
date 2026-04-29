@@ -252,6 +252,10 @@ Add entries to one or both files depending on the nature of the change.
 Every commit that modifies code, documentation, dependencies, or configuration
 must have a corresponding entry before pushing.
 
+The `## [Unreleased]` heading is automatically replaced with the release version
+and date by the publish workflow (`publish.yml`). **Never manually stamp it** —
+always leave it as `## [Unreleased]` and let the workflow handle it on release.
+
 ## Branching Policy
 
 - **Never commit directly to `main`**. Always create a new branch for changes.
