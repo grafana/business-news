@@ -7,46 +7,21 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed missing accessibility label on a form button required for Grafana 12 compatibility.
+
+### Changed
+
+- Plugin now requires Grafana 11.6.0 or newer.
+- Replaced deprecated query editor section toggle with an updated component.
+
 ### Project Updates
 
-- Updated CI/CD workflows to `v7.3.1`; added concurrency group, changelog stamping on release, and attestation
-  permissions.
-- Added `.markdownlint-cli2.yaml` for markdown linting.
+- Updated CI/CD workflows.
 - Added `markdownlint` and `spellcheck` npm scripts.
 - Converted changelog to Keep a Changelog format.
-
-### Features / Enhancements
-
-- Updated to Node 24
-- Updated to latest plugin build tooling
-- Added cspell configuration
-- Added coverage to CI test script
-- Fixed spelling errors
-- Fixed Playwright E2E Docker configuration
-- Fixed markdownlint errors across markdown files
-- Added markdownlint-cli rule to AGENTS.md
-- Added missing words to cspell configuration
-- Fixed E2E tests to use local xml-server instead of external URLs
-- Added xml-server healthcheck and Grafana dependency in docker-compose
-- Added Google Workspace Atom feed to xml-server for provisioning test
-- Removed unused packages: @types/node, tsconfig-paths, @stylistic/eslint-plugin
-- Updated glob to 13.0.6
-- Added rate limiting to xml-server
-- Updated xml-server to Express 5, removed unnecessary npm packages (fs, path, kill-port) from xml-server/package.json
-- Updated push workflow Grafana dependency range to >=10.1 and enabled dev image
-- Fixed README badges, replaced volkovlabs.io URLs with grafana.com equivalents
-- Updated plugin.json author to Grafana Labs
-- Fixed review issues: depends_on required, healthcheck rate limiting, trailing whitespace
-- Replaced Volkov Labs Atom feed fixture with Grafana Labs feed
-- Fixed Button aria-label required by Grafana 12 in ParametersEditor
-- Replaced deprecated `CollapsableSection` with `ControlledCollapse` in QueryEditor
-- Bumped minimum Grafana dependency to >=11.6.0 in plugin.json and CI workflow
-- Updated @grafana/plugin-e2e to 3.4.12, cspell to 10.0.0, prettier to 3.8.2, webpack to 5.106.1
-- Added no AI attribution rule to AGENTS.md
-- Added cspell and markdownlint-cli2 as devDependencies
-- Migrated eslint.config.js to ESM (eslint.config.mjs) with type-aware linting and deprecation warnings
-- Fixed missing radix parameter in xml-server parseInt call
-- Updated README requirements to match Grafana 11.6 minimum
+- Updated development scripts and tooling.
 
 ## [4.4.0] - 2025-07-12
 
