@@ -46,6 +46,7 @@ services:
     volumes:
       - ./test:/app/test
       - ./playwright-report:/app/playwright-report
+      - ./provisioning:/app/provisioning
     depends_on:
       grafana:
         condition: service_healthy
