@@ -25,6 +25,7 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 - Updated development scripts and tooling.
 - Changelog is now automatically stamped with version and date on release.
 - Removed `pr-files.yml` workflow; GitHub's native Files changed tab supersedes it.
+- Added `.npmrc` with `ignore-scripts=true` to disable lifecycle scripts and mitigate supply-chain attack risk.
 
 ## [4.4.0] - 2025-07-12
 
