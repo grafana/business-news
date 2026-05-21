@@ -12,12 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Updated to latest plugin build tooling
 - Added cspell configuration
 - Added coverage to CI test script
-- Bumped CI reusable workflow to ci-cd-workflows/v7.3.1
+- Bumped CI reusable workflow to ci-cd-workflows/v8.0.0
 - Added concurrency groups to all workflows to cancel stale runs
 - Added pull-requests: read and attestations: write permissions to CI job
-- Added stamp-changelog job to publish workflow: stamps CHANGELOG.md and src/CHANGELOG.md (if present) on release
+- Migrated publish workflow from auto-stamping changelog to pre-flight changelog validation
 - Bumped actions/checkout to v6, actions/setup-node to v6.4.0 across coverage workflow
-- Bumped davelosert/vitest-coverage-report-action to v2.11.2
+- Bumped davelosert/vitest-coverage-report-action to v2.12.0
 - Bumped actions/create-github-app-token to v3.1.1 in publish workflow
 - Bumped ArtiomTr/jest-coverage-report-action to v2.3.1 in coverage workflow
 - Added continue-on-error on base branch coverage run, base-coverage existence check

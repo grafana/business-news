@@ -23,9 +23,11 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.
 
 - Updated CI/CD workflows.
 - Updated development scripts and tooling.
-- Changelog is now automatically stamped with version and date on release.
 - Removed `pr-files.yml` workflow; GitHub's native Files changed tab supersedes it.
 - Added `.npmrc` with `ignore-scripts=true` to disable lifecycle scripts and mitigate supply-chain attack risk.
+- Migrated publish workflow from auto-stamping changelog to pre-flight changelog validation.
+- Bumped `plugin-ci-workflows` to v8.0.0.
+- Bumped `vitest-coverage-report-action` to v2.12.0.
 
 ## [4.4.0] - 2025-07-12
 
