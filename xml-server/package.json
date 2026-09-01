@@ -10,6 +10,6 @@
     "start": "node index.js --port 8001"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6"
+    "@types/express": "5.0.6"
   }
 }
